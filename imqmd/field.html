@@ -1,0 +1,566 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/nuclear.png?v=2.8.0" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/nuclear.png?v=2.8.0" type="image/png" sizes="32x32"><meta name="description" content="function isHidden(oDiv){       var vDiv &#x3D; document.getElementById(oDiv);       vDiv.style.display &#x3D; (vDiv.style.display &#x3D;&#x3D; &#39;none&#39;)?&#39;block&#39;:&#39;none&#39;;     }">
+<meta property="og:type" content="website">
+<meta property="og:title" content="myHexo">
+<meta property="og:url" content="http://example.com/imqmd/field.html">
+<meta property="og:site_name" content="myHexo">
+<meta property="og:description" content="function isHidden(oDiv){       var vDiv &#x3D; document.getElementById(oDiv);       vDiv.style.display &#x3D; (vDiv.style.display &#x3D;&#x3D; &#39;none&#39;)?&#39;block&#39;:&#39;none&#39;;     }">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/imqmd/fig/RBHF.png">
+<meta property="og:image" content="http://example.com/imqmd/fig/cdft.png">
+<meta property="og:image" content="http://example.com/imqmd/fig/pspin.jpg">
+<meta property="og:image" content="http://example.com/imqmd/fig/masstable.jpg">
+<meta property="og:image" content="http://example.com/imqmd/fig/halo.png">
+<meta property="og:image" content="http://example.com/imqmd/fig/chiral.gif">
+<meta property="og:image" content="http://example.com/imqmd/fig/mrota.png">
+<meta property="og:image" content="http://example.com/imqmd/fig/vibr.jpg">
+<meta property="og:image" content="http://example.com/imqmd/fig/astro.png">
+<meta property="og:image" content="http://example.com/imqmd/fig/dbd.png">
+<meta property="article:published_time" content="2023-12-09T05:42:22.239Z">
+<meta property="article:modified_time" content="2023-12-07T14:35:03.652Z">
+<meta property="article:author" content="邢康">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/imqmd/fig/RBHF.png"><title> | myHexo</title><link ref="canonical" href="http://example.com/imqmd/field.html"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.8.0"><link rel="stylesheet" href="css/custom.css"><script>var Stun = window.Stun || {};
+var CONFIG = {
+  root: '/',
+  algolia: undefined,
+  assistSearch: undefined,
+  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
+  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
+  header: {"enable":true,"showOnPost":true,"scrollDownIcon":false},
+  postWidget: {"endText":true},
+  nightMode: {"enable":true},
+  back2top: {"enable":true},
+  codeblock: {"style":"default","highlight":"light","wordWrap":false},
+  reward: false,
+  fancybox: false,
+  zoomImage: {"gapAside":"20px"},
+  galleryWaterfall: undefined,
+  lazyload: false,
+  pjax: undefined,
+  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
+  shortcuts: undefined,
+  prompt: {"copyButton":"复制","copySuccess":"复制成功","copyError":"复制失败"},
+  sourcePath: {"js":"js","css":"css","images":"images"},
+};
+
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 7.0.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="javascript:;" onclick="return false;"><span class="header-nav-menu-item__icon"><i class="fas fa-book"></i></span><span class="header-nav-menu-item__text">阅读</span></a><div class="header-nav-submenu"><div class="header-nav-submenu-item"><a class="header-nav-submenu-item__link" href="/archives/"><span class="header-nav-submenu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-submenu-item__text">归档</span></a></div><div class="header-nav-submenu-item"><a class="header-nav-submenu-item__link" href="/tags/"><span class="header-nav-submenu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-submenu-item__text">标签</span></a></div></div></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/imqmd/"><span class="header-nav-menu-item__text">imqmd</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/html/"><span class="header-nav-menu-item__text">html</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">IMQMD</div><div class="header-banner-info__subtitle">广西师范大学核物理</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><div class="custompage">
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+
+  <SCRIPT>
+    function isHidden(oDiv){
+      var vDiv = document.getElementById(oDiv);
+      vDiv.style.display = (vDiv.style.display == 'none')?'block':'none';
+    }
+  </SCRIPT>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://pkunuclear.github.io/favicon.ico">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/pwzhao.css" rel="stylesheet">
+
+    <title>Nuclear Physics Group</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="https://pkunuclear.github.io/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://pkunuclear.github.io/navbar.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="https://pkunuclear.github.io/assets/js/ie-emulation-modes-warning.js"></script>
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+
+<div style="background:url('fig/head.jpg') no-repeat;width=100%;height:150px; font-family:STXingkai; font-size:40px;color:red;">
+<p align="center">
+核物理与核天体物理团队
+</p>
+</div>
+
+
+  <header class="navbar navbar-light bg-faded navbar-static-top" >
+    <div class="clearfix">
+      <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
+        &#9776;
+      </button>
+      <a class="navbar-brand hidden-sm-up" href="index.html">Nuclear Physics Group</a>
+    </div>
+    <div class="collapse navbar-toggleable-xs" id="bd-main-nav">
+      <ul class="nav navbar-nav">
+        <a style=“color:#F00;font-size:22px;” class="nav-item nav-link " href="index.html">主页 </a>
+        <a style=“color:#F00;font-size:22px;” class="nav-item nav-link " href="team.html">研究团队 </a>
+        <a style=“color:#F00;font-size:22px;” class="nav-item nav-link active" href="field.html">研究方向</a>
+        <a style=“color:#F00;font-size:22px;” class="nav-item nav-link " href="result.html">研究成果 </a>
+        <a style=“color:#F00;font-size:22px;” class="nav-item nav-link " href="activity.html">学术活动 </a>
+        <a style=“color:#F00;font-size:22px;” class="nav-item nav-link " href="info.html">招生招聘 </a>
+        <a style=“color:#F00;font-size:22px;” class="nav-item nav-link " href="news.html">We heard that... </a>
+      </ul>
+      <ul class="nav navbar-nav pull-xs-right ">
+        <li class="nav-item btn-group">
+          <a style=“color:#F00;font-size:22px;” class="dropdown-toggle nav-link" id="dropdownMenu1" href="field.html#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            友情链接
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+            <a class="dropdown-item" href="periodical.html">期刊列表</a>
+            <span class="exturl"><a class="exturl__link"  class="dropdown-item"  target="_blank" rel="noopener" href="http://www.pku.edu.cn/" >北大主页</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>
+            <span class="exturl"><a class="exturl__link"  class="dropdown-item"  target="_blank" rel="noopener" href="http://www.phy.pku.edu.cn/" >物理学院</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>
+            <span class="exturl"><a class="exturl__link"  class="dropdown-item"  target="_blank" rel="noopener" href="http://www.lib.pku.edu.cn/portal/" >北大图书馆</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>
+            <span class="exturl"><a class="exturl__link"  class="dropdown-item"  target="_blank" rel="noopener" href="https://mail.pku.edu.cn/" >北大邮箱</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+
+
+
+
+
+
+<DIV style="cursor:pointer" onclick="isHidden('divab')">
+<h2 style="color:blue; " >
+原子核的 <i>ab</i>-initio 计算
+</h2>
+</DIV>
+
+<DIV id="divab" style="display:none">
+<p style="font-size:20px; color:black;" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+原子核的 <i>ab</i> initio 计算，是从真实的核子-核子相互作用出发，研究原子核的结构与反应等性质，是核物理研究中的热点之一。Brueckner 理论是目前最有希望拓展到重核区研究的 <i>ab</i> initio 方法之一。
+</p>
+<p style="font-size:20px; color:black;" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+鉴于相对论效应对于核物质和有限核性质的描述至关重要，团队发展了完全自洽的相对论 Brueckner-Hartree-Fock (RBHF) 方法 [Chin. Phys. Lett. 33 (2016) 102103, Phys. Rev. C 96 (2017) 014316]，针对核物质、中子滴以及有限核等系统开展了系列研究，给出了很好的理论描述，并且发现 RBHF 方法的计算结果对微观推导原子核的能量密度泛函具有十分重要的指导意义 [Phys. Lett. B 778 (2018) 344]。
+</p>
+<p style="font-size:20px; color:black;" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+此外，团队成员与北京航空航天大学团队合作，共同致力于发展相对论的手征核力 [Chin. Phys. C 42 (2018) 014103]，以期为 <i>ab</i> initio 计算提供更加微观的高精度真实核力。
+</p>
+<div style="text-align:center">
+<img src="fig/RBHF.png" alt="view" width="60%" />
+</div>
+</DIV>
+
+
+<DIV style="cursor:pointer" onclick="isHidden('divcdft321')">
+<h2 style="color:blue; " >
+原子核的协变密度泛函理论
+</h2>
+</DIV>
+
+<DIV id="divcdft321" style="display:none">
+<p style="font-size:20px; color:black;" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+原子核是由质子和中子组成的强相互作用有限量子多体系统。由于核力的复杂性，以及求解多体问题的困难，至今尚无一个能够统一描述所有原子核结构的理论。
+</p>
+<p style="font-size:20px; color:black;" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+密度泛函理论目前被广泛应用于物理、化学、材料等领域，是最成功的量子多体理论之一。经过近半个世纪的努力，核物理学家成功地将密度泛函理论推广用于描述原子核这一独特的自束缚多体系统，并且在描述原子核诸多性质方面取得了很大的成功。在当前可接受的计算条件下，密度泛函理论被广泛认为是统一描述所有原子核结构性质的候选“标准模型”。
+</p>
+<p style="font-size:20px; color:black;" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+原子核的协变密度泛函理论也称相对论密度泛函理论，它从一开始就考虑了基本的洛伦兹协变性，可以自然地给出自旋轨道相互作用、赝自旋对称性物理起源、核物质新的饱和机制、原子核内的奇时间场，以及与基本物理学理论相联系，并在描述原子核基态和激发态性质、中子星物态方程、宇宙演化过程中的元素合成等方面取得成功。
+</p>
+<p style="font-size:20px; color:black;" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+团队从上世纪90年代起就致力于协变密度泛函理论的发展和应用，取得了一系列创新性成果，具体可参见相关综述文献 [Prog. Part. Nucl. Phys. 57 (2006) 470], [物理学进展 4 (2011) 31] 及著作 [<i>Int. Rev. of Nucl. Phys: Vol. 10, World Scientific (2016)</i>]。
+</p>
+<div style="text-align:center">
+<img src="fig/cdft.png" alt="view" width="60%" />
+</div>
+</DIV>
+
+
+
+
+<DIV style="cursor:pointer" onclick="isHidden('div2')">
+<h2 style="color:blue; " >
+原子核中的赝自旋对称性
+</h2>
+</DIV>
+
+<DIV id="div2" style="display:none">
+<p style="font-size:20px; color:black;" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+赝自旋对称性于 1969 年提出，由于 20 世纪 90 年代在解释原子核的全同带等性质的应用，而引起广泛关注。近年来，关于赝自旋对称性起源的微观机制探索已成为核结构理论研究的重要热点之一。
+</p>
+<p style="font-size:20px; color:black;" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+团队利用协变密度泛函理论，严格证明了只要 Dirac 方程的标量势和矢量势之和的导数为零，即 d[V(r)+S(r)]/dr = 0，原子核单核子谱就具有赝自旋对称性；并指出实际原子核中，赝自旋对称性的破缺程度由赝自旋-轨道耦合势与赝离心势的竞争所决定 [Phys. Rev. C 58  (1998) R628,  Phys. Rev. C 59 (1999) 154]。根据严格证明的赝自旋对称性成立条件，提出了一个不仅严格满足赝自旋对称性条件，而且存在单粒子束缚态的相对论模型 [Chin. Phys. Lett. 20 (2003) 358]。针对赝自旋对称性破缺的定量描述，团队结合相似重正化群 (SRG) 方法，超对称 (SUSY) 量子力学和微扰理论，对此进行了深入研究 [Phys. Rev. C 87 (2013) 014334, Phys. Rev. C 88 (2013) 024311]。通过考察描述核子运动 Dirac 方程的反核子态，团队提出了原子核的反核子谱存在一种新的对称性——自旋对称性，并指出该对称性的起源与核子谱的赝自旋对称性相同 [Phys. Rev. Lett. 91 (2003) 262501]。而且在实际原子核中，与核子谱的赝自旋对称性破缺相比，反核子谱的自旋对称性破缺更小，几乎严格保持。鉴于在该领域的贡献，团队成员应邀在 Physics Reports 撰写《<i>Hidden pseudospin and spin symmetries and their origins in atomic nuclei</i>》的综述文章，系统总结原子核赝自旋和自旋对称性的研究进展 [Physics Reports 570 (2015) 1]。
+</p>
+<div style="text-align:center">
+<img src="fig/pspin.jpg" alt="view" width="80%" />
+</div>
+</DIV>
+
+
+
+<DIV style="cursor:pointer" onclick="isHidden('div7')">
+<h2 style="color:blue; " >
+原子核质量表
+</h2>
+</DIV>
+
+
+<DIV id="div7" style="display:none">
+<p style="font-size:20px; color:black;" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+原子核质量作为原子核的一个基本物理量，不仅对理解核结构和核反应有着重要作用，而且对于研究宇宙元素的起源也具有至关重要的意义。虽然随着实验技术的提高和探测设备的发展，原子核质量的精确测量已经取得很大的进展，但是仍有很多与天体 r 过程相关的丰中子原子核的质量测量在可预见的未来还难以实现，需要借助可靠的理论模型进行计算。
+</p>
+<p style="font-size:20px; color:black;" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+基于协变密度泛函，相对论连续谱 Hartree-Bogoliubov 理论统一自洽地处理对关联和连续谱 [Phys. Rev. Lett. 77 (1996) 3963, Nucl. Phys. A 635 (1998) 3], 不仅能够描述 β 稳定线附近的原子核，而且在描述奇特原子核方面也取得了巨大成功 [Prog. Part. Nucl. Phys. 57 (2006) 470]，可以对实验难以探测的丰中子原子核的质量进行可靠预言。团队利用相对论连续谱 Hartree-Bogoliubov 理论，采用相对论密度泛函 PC-PK1，系统给出了质子数 8 到 120 的原子核的质量, 预言了 9035 个束缚原子核。相比于其他质量模型, 恰当考虑连续谱贡献的相对论连续谱 Hartree-Bogoliubov 理论，将束缚原子核外推到更加丰中子的区域，扩大了核版图的范围 [Atom. Data Nucl. Data 121 (2018) 1]。
+</p>
+<p style="font-size:20px; color:black;" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+在成功构建包含连续谱的质量表之后，进一步构建一个包含形变与连续谱的质量表是一个重要且紧迫的工作。团队利用能够统一自洽描述原子核形变、对关联和连续谱的形变相对论 Hartree-Bogoliubov 连续谱理论 [Phys. Rev. C 82 (2010) 011301, Phys. Rev. C 85 (2012) 024312]，采用相对论密度泛函 PC-PK1，对整个核素图的原子核开展系统计算，以研究形变与连续谱效应对原子核质量和滴线的影响，力图实现原子核版图的精确描绘。
+</p>
+
+
+<div style="text-align:center">
+<img src="fig/masstable.jpg" alt="view" width="80%" />
+</div>
+
+</DIV>
+
+
+
+<DIV style="cursor:pointer" onclick="isHidden('div5')">
+<h2 style="color:blue; " >
+奇特原子核
+</h2>
+</DIV>
+
+
+<DIV id="div5" style="display:none">
+<p style="font-size:20px; color:black;" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+随着世界范围内放射性核束装置和探测技术的发展，远离 𝛽 稳定线的奇特原子核性质引起了物理学家的广泛关注。奇特原子核展现了与传统核物理观念相悖的新现象，如：晕现象、传统幻数的消失、新幻数的出现、新集体运动模式等，推动了核物理的发展。特别是晕核的发现为研究低密核物质结构和动力学性质提供了新机遇。然而，基于稳定原子核性质建立的传统原子核理论应用到这些新现象的研究时有明显的局限性，亟需改进或提出新理论。
+</p>
+<p style="font-size:20px; color:black;" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+为了描述奇特原子核，探索和研究原子核的中子晕等新现象，团队基于协变密度泛函理论，恰当地处理对关联以及连续态的贡献，实现了对束缚态和连续态的统一描述，建立了相对论连续谱理论 (RCHB) 模型，首次自洽地描述了 Li-11 中的晕现象 [Phys. Rev. Lett., 77 (1996) 3963]，并预言了近滴线原子核中存在的巨中子晕和形变晕等现象 [Phys. Rev. Lett. 80 (1998) 460]。之后进一步利用协变密度泛函理论对形变原子核 [Phys. Rev. C 82 (2010) 011301 (R)] 以及中重核的晕现象进行了研究 [J. Phys. G 42 (2015) 093101]。
+</p>
+<p style="font-size:20px; color:black;" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+团队成员受邀撰写相对论连续谱理论研究奇特原子核的综述论文 [Prog. Part. Nucl. Phys. 57 (2006) 470]。该文为 ESI 高被引论文，入选中国科学技术信息研究所第一届“中国百篇最具影响优秀国际学术论文”。
+</p>
+<div style="text-align:center">
+<img src="fig/halo.png" alt="view" width="60%" />
+</div>
+</DIV>
+
+
+
+<DIV style="cursor:pointer" onclick="isHidden('div1')">
+<h2 style="color:blue; " >
+原子核的手征对称性
+</h2>
+</DIV>
+
+<DIV id="div1" style="display:none">
+<p style="font-size:20px; color:black;" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+手征对称性是物理学等自然科学中的一个重要现象。原子核的手征对称性由 Frauendorf 和孟杰于 1997 年提出，其实验特征为手征双重带 [Nucl. Phys. A617 (1997) 131]。这一预言于 2001 年被实验证实 [Phys. Rev. Lett. 86 (2001) 971]。目前，手征对称性已成为原子核结构的研究热点之一，先后有 20 多个国家、约 100 多个研究团队参与研究。 
+</p>
+
+<p style="font-size:20px; color:black;" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+为了对原子核的手征对称性进行微观描述，并预言新的物理现象，团队基于绝热近似和固定组态约束方法，发展协变密度泛函理论，预言了原子核手征对称性破缺的多样性，其实验信号为在单个原子核中存在多对手征双重带，并将这一新现象命名为 Multiple chiral doublets，简称 M&chi;D [Phys. Rev. C 73 (2006)  037303]。
+</p>
+
+<p style="font-size:20px; color:black;" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+以美国圣母大学为主的实验合作组分别于 2008 和 2011 年在阿贡国家实验室进行两次实验，与团队合作，成功确认 Ce-133 中存在两对手征双重带，证实了 M&chi;D 的理论预言 [Phys. Rev. Lett. 110 (2013) 172504]。2016 年，孟杰领导一个国际合作组，不仅确认其中的 M&chi;D 现象，而且发现了原子核中手征对称性和空间反射对称性联立自发破缺的证据。相关论文被遴选为封面文章 [Phys. Rev. Lett. 116 (2016) 112501]，并入选 2016 年度中国高等学校十大科技进展。
+</p>
+
+<div style="text-align:center">
+<img src="fig/chiral.gif" alt="view" width="60%" />
+</div>
+</DIV>
+
+
+
+
+<DIV style="cursor:pointer" onclick="isHidden('divqite')">
+<h2 style="color:blue; " >
+原子核的奇特转动模式
+</h2>
+</DIV>
+
+<DIV id="divqite" style="display:none">
+<p style="font-size:20px; color:black;" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+转动核态性质是原子核最重要的激发态性质之一。随着世界范围内核物理大科学装置的兴建与探测技术的发展，原子核的奇特转动，如磁转动、反磁转动等引起了人们的广泛兴趣，这些奇特转动核态通常呈现出许多与传统转动核态截然不同的性质与现象。对原子核奇特转动的深入研究，为人们理解转动过程中原子核的形状演化与单粒子能级结构等提供了重要契机。
+</p>
+<p style="font-size:20px; color:black;" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+针对原子核的奇特转动，团队发展了基于协变密度泛函理论的倾斜轴推转模型 [Phys. Rev. C 91 (2008) 044329, Phys. Lett. B 699 (2011) 181] ，实现了对原子核奇特转动的微观、自洽地描述，给出了相应的微观机制和物理图像。此外，为了研究原子核转动过程中的超流效应，还发展了包含对关联的倾斜轴推转协变密度泛函理论 [Phys. Rev. C 92 (2015) 034319] 以及基于推转协变密度泛函理论的类壳模型方法 [Phys. Rev. C 97 (2018) 034317]。目前，团队已在原子核的磁转动、反磁转动、手征转动以及棒状结构等方面取得了重要成果 [Phy. Rev. Lett 107 (2011) 122501, Phys. Rev. Lett 115 (2015) 022501]。
+</p>
+
+
+
+
+<div style="text-align:center">
+<img src="fig/mrota.png" alt="view" width="60%" />
+</div>
+</DIV>
+
+
+
+<DIV style="cursor:pointer" onclick="isHidden('div4')">
+<h2 style="color:blue; " >
+原子核的集体振动模式
+</h2>
+</DIV>
+
+<DIV id="div4" style="display:none">
+<p style="font-size:20px; color:black;" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+原子核的集体振动体现了原子核作为一个量子多体系统所呈现的集体运动特征，可分为电荷守恒激发和电荷交换激发两大类。电荷守恒激发表现为原子核对外场的多极响应模式。特别是，近年来在丰中子奇特原子核中发现的低激发偶极共振模式——矮共振，为核物质的对称能、原子核的中子皮厚度、中子俘获率等，提供了重要信息。电荷交换激发亦称作同位旋激发，表现为同质量数原子核之间的跃迁，如原子核 &beta; 衰变、电荷交换反应等。由于在元素合成、中微子核反应、标准模型检验等研究中的重要作用，已成为核物理、粒子物理和天体物理领域最重要的热点问题之一。
+</p>
+
+<p style="font-size:20px; color:black;" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+近年来，团队基于相对 Hartree-Fock 理论和相对 Hartree-Fock-Bogoliubov 理论, 建立了完全自洽的无规相位近似 (RPA) 理论 [Phys. Rev. Lett. 101 (2008) 122502] 以及准粒子无规相位近似 (QRPA) 理论 [Phys. Lett. B 723 (2013) 172; Phys. Rev. C 95 (2017) 044301]，克服了原有协变密度泛函理论在统一描述原子核基态和同位旋激发方面的困难，给出原子核同位旋激发的相对论微观自洽描述和新的物理机制，并运用于标准模型中 CKM 矩阵幺正性的检验 [Phys. Rev. C 79 (2009) 064316]。基于有限温平均场理论, 建立了完全自洽的有限温无规相位近似 (RPA) 理论 [Phys. Lett. B 681 (2009) 315]，预言了新的低激发单极和偶极集体振动模式。
+</p>
+
+
+<div style="text-align:center">
+<img src="fig/vibr.jpg" alt="view" width="80%" />
+</div>
+</DIV>
+
+
+
+
+<DIV style="cursor:pointer" onclick="isHidden('div3')">
+<h2 style="color:blue; " >
+天体物理中的核过程
+</h2>
+</DIV>
+
+
+<DIV id="div3" style="display:none">
+<p style="font-size:20px; color:black;" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+自然界中由铁至铀的重元素起源问题是当今物理和天文学界十一大待解难题之一。其中，快中子俘获过程 (r 过程) 负责产生一半左右比铁重的元素，其合成机制是当今核天体物理研究的前沿和热点。一方面，r 过程发生的天体场所还没有完全确定，可能r过程场所包括：核芯塌缩超新星中的中微子驱动风、中子星合并、磁流体动力学核芯塌缩超新星的抛射物等。最近，对引力波 GW170817 及它的电磁对应物的观测，已确认了中子星合并这一 r 过程场所。另一方面，r 过程中涉及到的几千个丰中子原子核的质量、&beta; 衰变寿命和 (n,&gamma;) 与 (&gamma;, n) 反应截面等性质还不能通过实验测量。
+</p>
+<p style="font-size:20px; color:black;" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+团队基于核物理方面长期的积累，结合核物理实验及天文观测的最新进展，利用经典 r 过程模型，研究核物理输入量对快中子俘获过程的影响。建立参数化的天体环境模型，研究天体环境不确定性对 r 过程的影响。确定在快中子俘获过程中有关键作用的原子核 [Phys. Rev. C 78 (2008) 025806, Phys. Rev. C 87 (2013) 015805]，为相关核物理实验提供参考。利用 Th/U 核时钟，结合最新观测到的贫金属晕星的元素丰度，估算宇宙年龄 [Phys. Rev. C 80 (2009) 065806]，该工作被 Physics 以 “Calibrating the cosmic clock” 为题进行了点评。
+</p>
+
+<br /><br />
+
+<div style="text-align:center">
+<img src="fig/astro.png" alt="view" width="80%" />
+</div>
+
+<br /><br />
+
+</DIV>
+
+
+
+<DIV style="cursor:pointer" onclick="isHidden('divbeta')">
+<h2 style="color:blue; " >
+基本对称性的核物理检验
+</h2>
+</DIV>
+
+
+<DIV id="divbeta" style="display:none">
+<p style="font-size:20px; color:black;" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+原子核的无中微子双 β 衰变 (0&nu;&beta;&beta;) 研究是探索宇宙中物质—反物质不对称性以及超越标准模型新物理的关键问题之一。由于原子核的超流性质，0&nu;&beta;&beta; 衰变只可能在某些偶偶核中被观测到。该衰变过程一旦被实验证实，将预示着中微子是 Majorana 粒子，且轻子数不守恒。原子核 0&nu;&beta;&beta; 衰变矩阵元的精确计算结果是连接 0&nu;&beta;&beta; 衰变实验数据与轻子数破缺机制的关键因素，减小核矩阵元计算中的不确定性是相关研究中最重要、最具挑战的目标之一。
+</p>
+<p style="font-size:20px; color:black;" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+团队在协变密度泛函理论框架下，采用包含超越平均场关联的相对论原子核多体波函数以及包含弱作用电荷交换核子流和中微子势的相对论性衰变算符，首次实现了对原子核 0&nu;&beta;&beta; 衰变矩阵元的完全相对论性描述 [Phys. Rev. C 90 (2014) 054309]，该工作入选 Editor suggestion。此外，团队还分别在轻中微子交换和重中微子交换机制的假设下，研究了核矩阵元中的相对论效应和短程关联效应 [Phys. Rev. C 95 (2017) 024305]。
+</p>
+
+<div style="text-align:center">
+<img src="fig/dbd.png" alt="view" width="70%" />
+</div>
+</DIV>
+
+
+<DIV style="cursor:pointer" onclick="isHidden('divkp')">
+<h2 style="color:blue; " >
+部分科普文章
+</h2>
+
+
+<DIV id="divkp" style="display:none">
+<p style="font-size:20px; color:Black; height:20px" >
+&nbsp&nbsp<a href="pdf/1999NPR.pdf" target="_blank">放射性核束为核物理和核天体物理提供的新机遇 </a>
+</p>
+
+<br />
+<p style="font-size:20px; color:Black; height:20px" >
+&nbsp&nbsp<a href="pdf/2003PKU.pdf" target="_blank">滴线原子核中的晕现象——中子晕、 超子晕、巨晕和形变晕</a>
+</p>
+
+<br />
+<p style="font-size:20px; color:Black; height:20px" >
+&nbsp&nbsp<a href="pdf/2008NPR.pdf" target="_blank">宏观微观模型对重核区原子核基态性质的研究 </a>
+</p>
+
+<br />
+<p style="font-size:20px; color:Black; height:20px" >
+&nbsp&nbsp<a href="pdf/2009Phy.pdf" target="_blank">原子核是否存在手性 </a>
+</p>
+
+<br />
+<p style="font-size:20px; color:Black; height:20px" >
+&nbsp&nbsp<a href="pdf/2010Phy.pdf" target="_blank">原子核质量精密测量的研究进展 </a>
+</p>
+
+<br />
+<p style="font-size:20px; color:Black; height:20px" >
+&nbsp&nbsp<a href="pdf/2013Phy.pdf" target="_blank">天体环境下快中子俘获过程相关的核物理 </a>
+</p>
+
+<br />
+<p style="font-size:20px; color:Black; height:20px" >
+&nbsp&nbsp<a href="pdf/2016Scichina.pdf" target="_blank">原子核结构研究的一些重要历史回顾与几个热点问题 </a>
+</p>
+
+<br />
+<p style="font-size:20px; color:Black; height:20px" >
+&nbsp&nbsp<a href="pdf/2017NPR.pdf" target="_blank">原子核层次的手征对称性 </a>
+</p>
+
+
+
+<br />
+<p style="font-size:20px; color:Black; height:20px" >
+&nbsp&nbsp<a href="pdf/CAJ1994.pdf" target="_blank">核能存储及释放的新机制 </a>
+</p>
+
+
+
+<br />
+<p style="font-size:20px; color:Black; height:20px" >
+&nbsp&nbsp<a href="pdf/wuli2012.pdf" target="_blank">核科学与人类社会 </a>
+</p>
+
+
+
+<br />
+<p style="font-size:20px; color:Black; height:20px" >
+&nbsp&nbsp<a href="pdf/PKU2002S1.pdf" target="_blank">中子诱发铀裂变——一种新型的核反应 </a>
+</p>
+
+
+<br />
+<p style="font-size:20px; color:Black; height:20px" >
+&nbsp&nbsp<a href="pdf/zhao2019wuli.pdf" target="_blank">“奇形怪状”的原子核心 </a>
+</p>
+
+  
+<br />
+<p style="font-size:20px; color:Black; height:20px" >
+&nbsp&nbsp<a href="pdf/Zhao2019wuli_2.pdf" target="_blank">一场学习革命 </a>
+</p>  
+  
+
+</DIV>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br /><br />
+<br /><br />
+<br /><br />
+
+
+
+<br />
+<br />
+
+<ul2 class="nav">
+<div class="table-container"><table border="0">
+<tr>
+  <td style="font-size:15px;text-align:center;" colspan="5" bgcolor="98FB98" height="25px" width="1850px"><span style="font-family:arial;">Copyright &copy; </span> 2018&nbsp; Xinhui Wu </td>
+</tr>
+</table></div>
+</ul2>
+
+
+    </div> <!-- /container -->
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://pkunuclear.github.io/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="https://pkunuclear.github.io/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
+</div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">
+原子核的 ab-initio 计算
+</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text">
+原子核的协变密度泛函理论
+</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">3.</span> <span class="toc-text">
+原子核中的赝自旋对称性
+</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">4.</span> <span class="toc-text">
+原子核质量表
+</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">5.</span> <span class="toc-text">
+奇特原子核
+</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">6.</span> <span class="toc-text">
+原子核的手征对称性
+</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">7.</span> <span class="toc-text">
+原子核的奇特转动模式
+</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">8.</span> <span class="toc-text">
+原子核的集体振动模式
+</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">9.</span> <span class="toc-text">
+天体物理中的核过程
+</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">10.</span> <span class="toc-text">
+基本对称性的核物理检验
+</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">11.</span> <span class="toc-text">
+部分科普文章
+</span></a></li></ol></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/nuclear.png" alt="avatar"></div><p class="sidebar-ov-author__text">师大核物理</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="https://plus.google.com/" target="_blank" rel="noopener" data-popover="Google" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-google"></i></span></a><a class="sidebar-ov-social-item" href="https://twitter.com/" target="_blank" rel="noopener" data-popover="Twitter" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-twitter"></i></span></a><a class="sidebar-ov-social-item" href="https://youtube.com/" target="_blank" rel="noopener" data-popover="Youtube" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-youtube"></i></span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">2</div><div class="sidebar-ov-state-item__name">分类</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2023</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>邢康</span><span class="footer__devider">|</span><span>XXXXXXXX</span></div><div>llalallal</div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="/js/utils.js?v=2.8.0"></script><script src="/js/stun-boot.js?v=2.8.0"></script><script src="/js/scroll.js?v=2.8.0"></script><script src="/js/header.js?v=2.8.0"></script><script src="/js/sidebar.js?v=2.8.0"></script></body></html>
